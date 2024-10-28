@@ -1,6 +1,7 @@
 package com.ps;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class PropertyManagement {
@@ -17,12 +18,39 @@ public class PropertyManagement {
     private String phone;
     private ArrayList<Property> properties;
 
-    public PropertyManagement (String name, String address, String phone){
+    public PropertyManagement(String name, String address, String phone) {
         this.name = name;
         this.address = address;
         this.phone = phone;
         this.properties = new ArrayList<>();
     }
+
+    public void addProperty(Property property) {
+        //this.properties.add(property)
+
+    }
+
+    public void removeProperty(int propertyId) {
+//        this.properties.remove(propertyId);
+    }
+
+    public List<Property> getAllProperties(boolean isAvailable) {
+        return null;
+
+    }
+
+    public List<Property> searchByLocation(String Location) {
+        return null;
+    }
+
+    public List<Property> searchByPriceRange(double minPrice, double maxPrice){
+        return null;
+    }
+
+//    public List<Property>  searchByType(PropertyType type){
+//        return null;
+//    }
+
 
     public String getName() {
         return name;
